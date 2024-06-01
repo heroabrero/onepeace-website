@@ -1,0 +1,227 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  color: #ffffff;
+
+  text-shadow: 0 -1px 4px #000000, 0 -2px 10px #ff0, 0 -10px 20px #ff8000,
+    0 -18px 40px #f00;
+  color: #000000;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  background-image: url("gr5.gif");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cover {
+  background-image: url("big3.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: multiply;
+}
+.logo {
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar {
+  color: #ffffff;
+  text-shadow: 0 -1px 4px #000000, 0 -2px 10px #ff0, 0 -10px 20px #ff8000,
+    0 -18px 40px #f00;
+  color: #000000;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.nav-bar .logo {
+  font-size: 24px;
+}
+
+.nav-bar nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-bar nav a:hover {
+  color: #000000;
+  background: rgb(205, 14, 14);
+  border-radius: 50px;
+  padding: 15px 30px;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 400px; /* Reduced max-width to make the content narrower */
+  padding: 50px 20px; /* Reduced padding to make the content smaller */
+  margin-left: 20px; /* Move the content to the left */
+  text-align: left; /* Ensure text is aligned to the left */
+  float: left; /* Align the entire content to the left */
+}
+
+.content h1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 70px; /* Reduced font size to fit the narrower content */
+  margin-bottom: 20px;
+  left: 0%;
+}
+
+.content p {
+  font-size: 18px; /* Reduced font size to fit the narrower content */
+  margin-bottom: 50px;
+  text-align: left; /* Align text to the left */
+  left: 0;
+  float: left;
+}
+
+.cta-button {
+  text-decoration: none;
+  background: #faf9f8;
+  color: black;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background: rgb(4, 4, 4);
+  color: white;
+}
+
+/* Characters Section Styles */
+.characters {
+  margin-top: 100px; /* Adjusting for fixed nav bar */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.characters h1 {
+  color: #202c2d;
+  font-size: 100px;
+  color: #ffffff;
+  text-shadow: 0 -1px 4px #fff, 0 -2px 10px #ff0, 0 -10px 20px #ff8000,
+    0 -18px 40px #f00;
+  color: #ffffff;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: justify;
+}
+
+.character {
+  background: #9ca33e;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: -23px 13px 20px -2px rgba(119, 106, 25, 0.58);
+  -webkit-box-shadow: -23px 13px 20px -2px rgba(119, 106, 25, 0.58);
+  -moz-box-shadow: -23px 13px 20px -2px rgba(119, 106, 25, 0.58);
+  background: #2e1c1c;
+  background: linear-gradient(92deg, #2e1c1c 0%, #c3da18 80%);
+  background: -webkit-linear-gradient(92deg, #2e1c1c 0%, #c3da18 80%);
+  background: -moz-linear-gradient(92deg, #2e1c1c 0%, #c3da18 80%);
+  transition: transform 0.3s;
+  text-decoration-color: aqua;
+  text-align: justify;
+}
+
+.character:hover {
+  transform: scale(1.07);
+}
+
+.character img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.character h2 {
+  font-family: "Pirata One", cursive;
+  font-size: 24px;
+  color: #851313;
+  margin: 15px 0;
+}
+
+.character p {
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Footer Styles */
+.footer {
+  color: rgb(251, 251, 251);
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 100;
+  width: 100%;
+}
+
+/* Small video styles */
+.small-video-container {
+  position: fixed;
+  bottom: 100px;
+  top: 150px;
+  right: 30px;
+  width: 350px; /* Adjust width as needed */
+  height: 50x; /* Adjust height as needed */
+  z-index: 2;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#small-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
